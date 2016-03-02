@@ -32,14 +32,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cellIdentifier = "Cellidentifier"
         
-        let cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)! as UITableViewCell
+        let cell:CustomCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? CustomCell
         
         let row = indexPath.row
         let rowDict = self.listTeams[row] as! NSDictionary
-        cell.textLabel?.text = rowDict["name"] as? String
+        cell.mylabel?.text = rowDict["name"] as? String
         
         let imagePath = String(format: "%@.png", rowDict["image"] as! String)
-        cell.imageView?.image = UIImage(named: imagePath)
+        cell.myImageView?.image = UIImage(named: imagePath)
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
