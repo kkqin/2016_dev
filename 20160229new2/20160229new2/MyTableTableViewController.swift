@@ -39,17 +39,24 @@ class MyTableTableViewController: UITableViewController, UITextFieldDelegate {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.listTeams.count
+        return self.listTeams.count + 1
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cellidentifier", forIndexPath: indexPath)
+        
+        let b_addCell = (indexPath.row == self.listTeams.count)
+        if b_addCell == false{
+        
 
         cell.textLabel?.text = self.listTeams[indexPath.row] as? String
-        
-        
-        return cell
+    
+        }else{
+            self.txtfield.frame = CGRectMake(10, 5, 300, 44)
+            cell.contentView.addSubview(self.txtfield)
+        }
+            return cell
     }
     
 
@@ -61,6 +68,14 @@ class MyTableTableViewController: UITableViewController, UITextFieldDelegate {
     }
     */
 
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        if indexPath.row == self.listTeams.count {
+            return .Insert
+        }else{
+            return .Delete
+        }
+    }
+    
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.tableView.setEditing(editing, animated: true)
@@ -76,10 +91,13 @@ class MyTableTableViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            self.listTeams.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            self.listTeams.insertObject(self.txtfield.text!, atIndex: indexPath.row)
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+        self.tableView.reloadData()
     }
 
     /*

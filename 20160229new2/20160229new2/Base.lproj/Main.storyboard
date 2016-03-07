@@ -42,7 +42,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </objects>
-            <point key="canvasLocation" x="569" y="-70"/>
+            <point key="canvasLocation" x="551" y="-70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6sb-Hi-ay6">
