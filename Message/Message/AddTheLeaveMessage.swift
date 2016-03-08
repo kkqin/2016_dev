@@ -8,11 +8,14 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class AddTheLeaveMessage: UIViewController, UITextViewDelegate {
     
     var textview:UITextView!
     var lplacehold:UILabel!
+    var date = NSDate()
+    var datestr:String = ""
     
     override func loadView() {
         super.loadView()
@@ -47,8 +50,25 @@ class AddTheLeaveMessage: UIViewController, UITextViewDelegate {
         self.navigationItem.rightBarButtonItems = tn
     }
     
-    func exitAdd(){
-        let alertView = UIAlertController(title: "关闭", message: "文字将不会保存", preferredStyle: UIAlertControllerStyle.Alert)
+    func hasAllTheBlankSpace() -> Bool{
+//        NSString *rawString = [textField text];
+//        NSCharacterSet *whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+//        NSString *trimmed = [rawString stringByTrimmingCharactersInSet:whitespace];
+//        if ([trimmed length] == 0) {
+//            // Text was empty or only whitespace.
+//        }
+        let rawString = textview.text
+        let whitespaceSet = NSCharacterSet.whitespaceCharacterSet()
+        let trimmed = rawString.stringByTrimmingCharactersInSet(whitespaceSet)
+        if trimmed.isEmpty{
+            return true
+        }else {
+            return false
+        }
+    }
+    
+    func addAlert(str:String){
+        let alertView = UIAlertController(title: "", message: str, preferredStyle: UIAlertControllerStyle.Alert)
         alertView.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel
             , handler: nil))
         alertView.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: { (did:UIAlertAction) -> Void in
@@ -58,8 +78,41 @@ class AddTheLeaveMessage: UIViewController, UITextViewDelegate {
         self.presentViewController(alertView, animated: true, completion: nil)
     }
     
+    func exitAdd(){
+        addAlert("文字将不会被保存")
+    }
+    
     func doUpload(){
-       //Alamofire.upload(.POST, <#T##URLString: URLStringConvertible##URLStringConvertible#>, data: <#T##NSData#>)
+        //test id = 11 , john.
+        
+        if !hasAllTheBlankSpace(){
+        
+        let request = NSMutableURLRequest(URL:NSURL(string: "http://127.0.0.1/ios/exam/putMessages.php")!)
+        request.HTTPMethod = "POST"
+        //request.setValue(requestToken, forHTTPHeaderField: "Authorization:")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        //request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
+        
+        let dformatter = NSDateFormatter()
+        dformatter.dateFormat = "yyy-MM-dd HH:mm:ss"
+        self.datestr = dformatter.stringFromDate(self.date)
+        
+        let values = ["id":"11", "ileave":"\(textview.text)", "lpic":"", "ltime":"\(self.datestr)"]
+        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(values, options: [])
+        
+        Alamofire.request(request).responseJSON { response in
+                // do whatever you want here
+                switch response.result {
+                case .Failure( let error):
+                    print(error)
+                case .Success(let responseObject):
+                    print(responseObject)
+                }
+        }
+       self.dismissViewControllerAnimated(true, completion: nil)
+        }else{
+            addAlert("文字为空无法上传")
+        }
     }
     
     func textViewDidChange(textView: UITextView) {

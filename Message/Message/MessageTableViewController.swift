@@ -57,7 +57,7 @@ class MessageTableViewController: UITableViewController {
     func refreshData() {
         print("refresh")
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self,
-            selector: "dataRefresh", userInfo: nil, repeats: true)//给cpu点时间操作，不然会crash掉
+            selector: "dataRefresh", userInfo: nil, repeats: true)//给点时间操作，不然会crash掉
         }
     
     func dataRefresh(){
@@ -84,7 +84,7 @@ class MessageTableViewController: UITableViewController {
     }
     
     func thejsonAct(){
-        Alamofire.request(.POST, "http://localhost/ios/exam/getMessages.php", parameters: ["":""]).authenticate(user: "ooly.club", password: "ooly.club116000+q").response{
+        Alamofire.request(.POST, "http://127.0.0.1/ios/exam/getMessages.php", parameters: ["":""]).authenticate(user: "ooly.club", password: "ooly.club116000+q").response{
             (request, response, data, error) -> Void in
         
             if error != nil{
