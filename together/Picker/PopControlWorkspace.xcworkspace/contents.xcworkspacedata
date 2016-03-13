@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TestPopControl/TestPopControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PopControl/PopControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../datePickFrame/datePickFrame.xcodeproj">
+   </FileRef>
+</Workspace>

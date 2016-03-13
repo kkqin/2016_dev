@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6371EE951C958EA4004BC99C /* datePickFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6371EE941C958EA4004BC99C /* datePickFrame.framework */; };
+		EF262F3F1C8FCDDC0055AD76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262F3E1C8FCDDC0055AD76 /* AppDelegate.swift */; };
+		EF262F411C8FCDDC0055AD76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262F401C8FCDDC0055AD76 /* ViewController.swift */; };
+		EF262F441C8FCDDC0055AD76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF262F421C8FCDDC0055AD76 /* Main.storyboard */; };
+		EF262F461C8FCDDC0055AD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF262F451C8FCDDC0055AD76 /* Assets.xcassets */; };
+		EF262F491C8FCDDC0055AD76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF262F471C8FCDDC0055AD76 /* LaunchScreen.storyboard */; };
+		EF262F541C8FCDDC0055AD76 /* TestPopControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262F531C8FCDDC0055AD76 /* TestPopControlTests.swift */; };
+		EF262F5F1C8FCE710055AD76 /* PopControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF262F5E1C8FCE710055AD76 /* PopControl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF262F501C8FCDDC0055AD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF262F331C8FCDDC0055AD76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF262F3A1C8FCDDC0055AD76;
+			remoteInfo = TestPopControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6371EE941C958EA4004BC99C /* datePickFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = datePickFrame.framework; path = "../../datePickFrame/build/Debug-iphoneos/datePickFrame.framework"; sourceTree = "<group>"; };
+		EF262F3B1C8FCDDC0055AD76 /* TestPopControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPopControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF262F3E1C8FCDDC0055AD76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF262F401C8FCDDC0055AD76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF262F431C8FCDDC0055AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF262F451C8FCDDC0055AD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF262F481C8FCDDC0055AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF262F4A1C8FCDDC0055AD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF262F4F1C8FCDDC0055AD76 /* TestPopControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPopControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF262F531C8FCDDC0055AD76 /* TestPopControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPopControlTests.swift; sourceTree = "<group>"; };
+		EF262F551C8FCDDC0055AD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF262F5E1C8FCE710055AD76 /* PopControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopControl.framework; path = "../PopControl/build/Debug-iphoneos/PopControl.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF262F381C8FCDDC0055AD76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6371EE951C958EA4004BC99C /* datePickFrame.framework in Frameworks */,
+				EF262F5F1C8FCE710055AD76 /* PopControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF262F4C1C8FCDDC0055AD76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF262F321C8FCDDC0055AD76 = {
+			isa = PBXGroup;
+			children = (
+				6371EE941C958EA4004BC99C /* datePickFrame.framework */,
+				EF262F5E1C8FCE710055AD76 /* PopControl.framework */,
+				EF262F3D1C8FCDDC0055AD76 /* TestPopControl */,
+				EF262F521C8FCDDC0055AD76 /* TestPopControlTests */,
+				EF262F3C1C8FCDDC0055AD76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF262F3C1C8FCDDC0055AD76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF262F3B1C8FCDDC0055AD76 /* TestPopControl.app */,
+				EF262F4F1C8FCDDC0055AD76 /* TestPopControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF262F3D1C8FCDDC0055AD76 /* TestPopControl */ = {
+			isa = PBXGroup;
+			children = (
+				EF262F3E1C8FCDDC0055AD76 /* AppDelegate.swift */,
+				EF262F401C8FCDDC0055AD76 /* ViewController.swift */,
+				EF262F421C8FCDDC0055AD76 /* Main.storyboard */,
+				EF262F451C8FCDDC0055AD76 /* Assets.xcassets */,
+				EF262F471C8FCDDC0055AD76 /* LaunchScreen.storyboard */,
+				EF262F4A1C8FCDDC0055AD76 /* Info.plist */,
+			);
+			path = TestPopControl;
+			sourceTree = "<group>";
+		};
+		EF262F521C8FCDDC0055AD76 /* TestPopControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF262F531C8FCDDC0055AD76 /* TestPopControlTests.swift */,
+				EF262F551C8FCDDC0055AD76 /* Info.plist */,
+			);
+			path = TestPopControlTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF262F3A1C8FCDDC0055AD76 /* TestPopControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF262F581C8FCDDC0055AD76 /* Build configuration list for PBXNativeTarget "TestPopControl" */;
+			buildPhases = (
+				EF262F371C8FCDDC0055AD76 /* Sources */,
+				EF262F381C8FCDDC0055AD76 /* Frameworks */,
+				EF262F391C8FCDDC0055AD76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPopControl;
+			productName = TestPopControl;
+			productReference = EF262F3B1C8FCDDC0055AD76 /* TestPopControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF262F4E1C8FCDDC0055AD76 /* TestPopControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF262F5B1C8FCDDC0055AD76 /* Build configuration list for PBXNativeTarget "TestPopControlTests" */;
+			buildPhases = (
+				EF262F4B1C8FCDDC0055AD76 /* Sources */,
+				EF262F4C1C8FCDDC0055AD76 /* Frameworks */,
+				EF262F4D1C8FCDDC0055AD76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF262F511C8FCDDC0055AD76 /* PBXTargetDependency */,
+			);
+			name = TestPopControlTests;
+			productName = TestPopControlTests;
+			productReference = EF262F4F1C8FCDDC0055AD76 /* TestPopControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF262F331C8FCDDC0055AD76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = 13110100224;
+				TargetAttributes = {
+					EF262F3A1C8FCDDC0055AD76 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EF262F4E1C8FCDDC0055AD76 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EF262F3A1C8FCDDC0055AD76;
+					};
+				};
+			};
+			buildConfigurationList = EF262F361C8FCDDC0055AD76 /* Build configuration list for PBXProject "TestPopControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF262F321C8FCDDC0055AD76;
+			productRefGroup = EF262F3C1C8FCDDC0055AD76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF262F3A1C8FCDDC0055AD76 /* TestPopControl */,
+				EF262F4E1C8FCDDC0055AD76 /* TestPopControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF262F391C8FCDDC0055AD76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF262F491C8FCDDC0055AD76 /* LaunchScreen.storyboard in Resources */,
+				EF262F461C8FCDDC0055AD76 /* Assets.xcassets in Resources */,
+				EF262F441C8FCDDC0055AD76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF262F4D1C8FCDDC0055AD76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF262F371C8FCDDC0055AD76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF262F411C8FCDDC0055AD76 /* ViewController.swift in Sources */,
+				EF262F3F1C8FCDDC0055AD76 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF262F4B1C8FCDDC0055AD76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF262F541C8FCDDC0055AD76 /* TestPopControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF262F511C8FCDDC0055AD76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF262F3A1C8FCDDC0055AD76 /* TestPopControl */;
+			targetProxy = EF262F501C8FCDDC0055AD76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF262F421C8FCDDC0055AD76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF262F431C8FCDDC0055AD76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF262F471C8FCDDC0055AD76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF262F481C8FCDDC0055AD76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF262F561C8FCDDC0055AD76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF262F571C8FCDDC0055AD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF262F591C8FCDDC0055AD76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestPopControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Neusoft.TestPopControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF262F5A1C8FCDDC0055AD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestPopControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Neusoft.TestPopControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF262F5C1C8FCDDC0055AD76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestPopControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Neusoft.TestPopControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPopControl.app/TestPopControl";
+			};
+			name = Debug;
+		};
+		EF262F5D1C8FCDDC0055AD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestPopControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Neusoft.TestPopControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPopControl.app/TestPopControl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF262F361C8FCDDC0055AD76 /* Build configuration list for PBXProject "TestPopControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF262F561C8FCDDC0055AD76 /* Debug */,
+				EF262F571C8FCDDC0055AD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF262F581C8FCDDC0055AD76 /* Build configuration list for PBXNativeTarget "TestPopControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF262F591C8FCDDC0055AD76 /* Debug */,
+				EF262F5A1C8FCDDC0055AD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF262F5B1C8FCDDC0055AD76 /* Build configuration list for PBXNativeTarget "TestPopControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF262F5C1C8FCDDC0055AD76 /* Debug */,
+				EF262F5D1C8FCDDC0055AD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF262F331C8FCDDC0055AD76 /* Project object */;
+}
