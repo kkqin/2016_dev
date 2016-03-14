@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-nY-UHv">
+                                <rect key="frame" x="249" y="246" width="90" height="30"/>
+                                <state key="normal" title="资源目录加载"/>
+                                <connections>
+                                    <action selector="loadBundle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8b-wy-Rqq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk2-Ya-v7A">
+                                <rect key="frame" x="249" y="299" width="90" height="30"/>
+                                <state key="normal" title="沙盒目录加载"/>
+                                <connections>
+                                    <action selector="loadSandBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Em-AN-9cu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXq-Mk-mlL">
+                                <rect key="frame" x="249" y="356" width="90" height="30"/>
+                                <state key="normal" title="云服务器加载"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-EA-u63">
+                                <rect key="frame" x="257" y="446" width="75" height="30"/>
+                                <state key="normal" title="从相机抓取">
+                                    <color key="titleColor" red="0.28958705461993184" green="1" blue="0.29242699955079587" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-x8-emr">
+                                <rect key="frame" x="249" y="401" width="90" height="30"/>
+                                <state key="normal" title="从图片库选取">
+                                    <color key="titleColor" red="0.09882281165270923" green="1" blue="0.085571580285333737" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-uv-uuU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="205"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OYO-nY-UHv" firstAttribute="top" secondItem="C0L-uv-uuU" secondAttribute="bottom" constant="16" id="0wd-qp-ZxW"/>
+                            <constraint firstItem="BeX-EA-u63" firstAttribute="centerX" secondItem="K7i-x8-emr" secondAttribute="centerX" id="6yO-9o-5KX"/>
+                            <constraint firstItem="C0L-uv-uuU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bnm-lJ-2ZH"/>
+                            <constraint firstItem="BeX-EA-u63" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fz2-4D-TyU"/>
+                            <constraint firstItem="gXq-Mk-mlL" firstAttribute="leading" secondItem="jk2-Ya-v7A" secondAttribute="leading" id="Q5F-nN-zI7"/>
+                            <constraint firstItem="jk2-Ya-v7A" firstAttribute="top" secondItem="OYO-nY-UHv" secondAttribute="bottom" constant="23" id="U5I-4v-ssv"/>
+                            <constraint firstItem="K7i-x8-emr" firstAttribute="top" secondItem="gXq-Mk-mlL" secondAttribute="bottom" constant="15" id="Yup-cd-UsV"/>
+                            <constraint firstItem="gXq-Mk-mlL" firstAttribute="top" secondItem="jk2-Ya-v7A" secondAttribute="bottom" constant="27" id="aGn-Do-brE"/>
+                            <constraint firstItem="C0L-uv-uuU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c8g-vG-vL1"/>
+                            <constraint firstItem="BeX-EA-u63" firstAttribute="top" secondItem="K7i-x8-emr" secondAttribute="bottom" constant="15" id="ewF-S1-qYb"/>
+                            <constraint firstItem="OYO-nY-UHv" firstAttribute="leading" secondItem="jk2-Ya-v7A" secondAttribute="leading" id="idF-Mf-rzJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BeX-EA-u63" secondAttribute="bottom" constant="128" id="kNi-Bf-r1x"/>
+                            <constraint firstItem="K7i-x8-emr" firstAttribute="leading" secondItem="gXq-Mk-mlL" secondAttribute="leading" id="tdn-wj-HO8"/>
+                            <constraint firstItem="C0L-uv-uuU" firstAttribute="centerX" secondItem="OYO-nY-UHv" secondAttribute="centerX" id="wZa-ub-omo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bnm-lJ-2ZH"/>
+                                <exclude reference="c8g-vG-vL1"/>
+                                <exclude reference="wZa-ub-omo"/>
+                                <exclude reference="0wd-qp-ZxW"/>
+                                <exclude reference="idF-Mf-rzJ"/>
+                                <exclude reference="U5I-4v-ssv"/>
+                                <exclude reference="Q5F-nN-zI7"/>
+                                <exclude reference="aGn-Do-brE"/>
+                                <exclude reference="Yup-cd-UsV"/>
+                                <exclude reference="tdn-wj-HO8"/>
+                                <exclude reference="6yO-9o-5KX"/>
+                                <exclude reference="Fz2-4D-TyU"/>
+                                <exclude reference="ewF-S1-qYb"/>
+                                <exclude reference="kNi-Bf-r1x"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Bnm-lJ-2ZH"/>
+                                <include reference="c8g-vG-vL1"/>
+                                <include reference="wZa-ub-omo"/>
+                                <include reference="0wd-qp-ZxW"/>
+                                <include reference="idF-Mf-rzJ"/>
+                                <include reference="U5I-4v-ssv"/>
+                                <include reference="Q5F-nN-zI7"/>
+                                <include reference="aGn-Do-brE"/>
+                                <include reference="Yup-cd-UsV"/>
+                                <include reference="tdn-wj-HO8"/>
+                                <include reference="6yO-9o-5KX"/>
+                                <include reference="Fz2-4D-TyU"/>
+                                <include reference="ewF-S1-qYb"/>
+                                <include reference="kNi-Bf-r1x"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="C0L-uv-uuU" id="Sqz-4D-LcM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.5" y="431"/>
+        </scene>
+    </scenes>
+</document>
