@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import CoreData
 class MyEventListController: UITableViewController {
 
+    var eventArray:NSMutableArray!
+    var appDelegate:AppDelegate!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,19 @@ class MyEventListController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let request:NSFetchRequest = NSFetchRequest()
+        let entity:NSEntityDescription? = NSEntityDescription.entityForName("MyEvent", inManagedObjectContext: self.appDelegate.managedObjectContext!)
+        
+        request.entity = entity
+        
+        do{
+            //let ab = try self.appDelegate.managedObjectContext?.
+        }catch{}
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

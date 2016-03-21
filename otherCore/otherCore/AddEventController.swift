@@ -14,13 +14,15 @@ class AddEventController: UIViewController {
     @IBOutlet weak var eventField: UITextField!
     
     var appDelegate:AppDelegate!
-    var eventArray:NSMutableArray!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.appDelegate = (UIApplication.sharedApplication().delegate) as! AppDelegate
     }
+    
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
