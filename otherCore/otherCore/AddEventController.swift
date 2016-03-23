@@ -49,11 +49,12 @@ class AddEventController: UIViewController {
             do {
                 try self.appDelegate.managedObjectContext?.save()
                 
-                //let actionSheet = UIActionSheet(title: "保存成功", delegate: nil, cancelButtonTitle: "sure", destructiveButtonTitle: nil)
-                //actionSheet.showInView(self.view)
-                let actionSheet = UIAlertController(title: "保存成功", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
-                actionSheet.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Cancel, handler: nil))
-                self.presentViewController(actionSheet, animated: true, completion: nil)
+//                let actionSheet = UIAlertController(title: "保存成功", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+//                actionSheet.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Cancel, handler: nil))
+//                self.presentViewController(actionSheet, animated: true, completion: nil)
+                
+                let actionSheet = UIActionSheet(title: "Save succeed", delegate: nil, cancelButtonTitle: "OK", destructiveButtonTitle: nil)
+                    actionSheet.showInView(self.view)
                 
             } catch let er as NSError{
                 print("save \(er)")
