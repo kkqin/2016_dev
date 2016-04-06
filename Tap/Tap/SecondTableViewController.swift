@@ -41,8 +41,8 @@ class SecondTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier2", forIndexPath: indexPath)
 
-        // Configure the cell...
-
+        cell.textLabel?.text = "second"
+        
         return cell
     }
     

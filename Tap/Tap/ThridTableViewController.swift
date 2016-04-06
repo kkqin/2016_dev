@@ -41,7 +41,7 @@ class ThridTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier3", forIndexPath: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = "thrid"
 
         return cell
     }

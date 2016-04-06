@@ -132,11 +132,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gbn-nO-6Hv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XXX-oN-tRR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XXX-oN-tRR">
+                            <connections>
+                                <segue destination="Ztj-Pc-Kde" kind="presentation" id="o2c-h8-QG4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="Ztj-Pc-Kde" kind="presentation" id="Elq-87-hmK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wve-XT-dyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,11 +153,12 @@
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                     </webView>
                     <navigationItem key="navigationItem" id="5GT-sa-Fbs">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QNl-Nc-EQ7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QNl-Nc-EQ7">
+                            <connections>
+                                <segue destination="Ztj-Pc-Kde" kind="presentation" id="4Na-u1-Mbz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="Ztj-Pc-Kde" kind="presentation" id="ekY-UE-7vN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IY8-2q-dr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,8 +176,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viZ-5V-ls4">
-                                <rect key="frame" x="20" y="72" width="553" height="528"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viZ-5V-ls4">
+                                <rect key="frame" x="20" y="72" width="554" height="528"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
@@ -188,11 +190,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="title" id="qu8-cV-R1T">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cDr-TZ-k31"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cDr-TZ-k31">
+                            <connections>
+                                <segue destination="Ztj-Pc-Kde" kind="presentation" id="Ryy-39-LgA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="Ztj-Pc-Kde" kind="presentation" id="DBJ-VA-kfc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lj2-Jm-LYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,7 +231,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wK8-JV-Jky"/>
+                    <navigationItem key="navigationItem" id="wK8-JV-Jky">
+                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="FbW-ik-CAv"/>
+                        <barButtonItem key="rightBarButtonItem" title="SAVE" id="AZT-LH-DM3"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lyv-s3-7WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,6 +368,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ekY-UE-7vN"/>
+        <segue reference="Ryy-39-LgA"/>
     </inferredMetricsTieBreakers>
 </document>
